@@ -12,6 +12,7 @@
     <div id="bloc_page">
         <header>
 
+            <!-- MENU NAVIGATION-->
             <div id="logo">
 
                 <img src="ressources/images/logo/Reservia.svg" alt="Logo Reservia" />
@@ -21,7 +22,7 @@
             <nav>
                     <div id="menu">
 
-                        <ul id="liens_menu">
+                        <ul id="logo">
                             <li><a href="#hebergements" id="lien_hebergements">Hébergements</a></li>
                             <li><a href="#activites" id="lien_activites">Activités</a></li>
                         </ul>
@@ -34,7 +35,27 @@
             </nav>
 
         </header>
-             <i class="fas fa-map-marker-alt"></i>
+
+        <section id="blocrecherche"><!--Bloc Recherche et Filtres-->
+
+            <div id="recherche">
+
+                <!--Titre et sous titre Recherche-->
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p id="sous-titre">En plein centre ville ou en pleine nature
+                </p>
+                
+                    <div id="bloc_saisie">
+                        <!--Champ de recherche + bouton Rechercher + icône-->
+                        <form method="POST" action="#">
+
+                                <i class="fas fa-map-marker-alt map"></i><!--icône map-->
+                                <input type="search" name="rechercher" placeholder="Marseille, France" id="rechercher" />
+                                <button type="button" id="bouton"><span id="text_rechercher">Rechercher</span></button>
+                        </form>
+                    </div>
+
+            </div>
     </div>
 </body>
 </html>
