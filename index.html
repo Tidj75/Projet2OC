@@ -39,23 +39,70 @@
         <section id="blocrecherche"><!--Bloc Recherche et Filtres-->
 
             <div id="recherche">
-
                 <!--Titre et sous titre Recherche-->
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p id="sous-titre">En plein centre ville ou en pleine nature
                 </p>
                 
-                    <div id="bloc_saisie">
-                        <!--Champ de recherche + bouton Rechercher + icône-->
+                    
                         <form method="POST" action="#">
 
                                 <i class="fas fa-map-marker-alt map"></i><!--icône map-->
                                 <input type="search" name="rechercher" placeholder="Marseille, France" id="rechercher" />
                                 <button type="button" id="bouton"><span id="text_rechercher">Rechercher</span></button>
-                        </form>
-                    </div>
 
-            </div>
+                        </form>
+
+
+                        <!-- Filtres-->
+
+                        <div class="filtres">
+
+                            <p id="titre_filtres">Filtres</p>
+
+                            <ul>
+                            
+                            <div class="economique">
+                                <i class="fas fa-money-bill-wave billet"></i>
+                                <a href="#">Économique</a>
+                            </div>
+
+                            <div class="familial">
+                                <i class="fas fa-child personne"></i>
+                                <a href="#">Familial</a>
+                            </div>    
+
+                            <div class="romantique">
+                                <i class="fas fa-heart coeur"></i>
+                                <a href="#">Romantique</a>
+                            </div>
+
+                            <div class="animaux">
+                                <i class="fas fa-dog chien"></i>
+                                <a href="#">Animaux autorisés</a>
+                            </div>
+
+                            </ul>
+
+             
+                        </div>
+
+                        <!--Informations-->
+
+                        <div id="info">
+                            <p>
+                               <i class="fas fa-info" style="color: #0065FC;"></i>
+                               Plus de 500 logements sont disponibles dans cette ville
+                            </p>
+                        </div>
+
+
+
+
+
+            </div>            
+         
+         </section>  
     </div>
 </body>
 </html>

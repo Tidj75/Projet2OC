@@ -10,10 +10,10 @@
     font-weight: normal;
     font-style: normal;
 }
-}
+
 /* -------- ÉLÉMENTS PRINCIPAUX --------- */
 body{
-    font-family: 'ralewayregular' Arial, Helvetica, sans-serif;
+    font-family: 'raleway thin' Arial, Helvetica, sans-serif;
 }
 h1 h2{
     font-weight: bold;
@@ -78,7 +78,8 @@ nav a:hover{
 #recherche h1{
 	font-weight: bold;
 	font-size: 1.2em;
-	margin-bottom: -12px;
+    margin-bottom: -12px;
+
 }
 
 form{
@@ -116,7 +117,111 @@ input{
 	font-weight: bold;
 }
 
-#search{
-	display: none;
+/* ------- FILTRES ------- */
+
+#titre_filtres{
+	margin-top: 20px;
+    font-weight: bold;
+    align-items: center
+}
+
+.filtres a
+{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+
+.filtres{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.economique
+{
+   display: inline;
+   border: solid 2px #DEEBFF;
+   border-radius: 10px 30px 30px 10px;
+   border-color: #b1b1b1;
+   margin-right: 30px;
+   padding: 7px 7px 7px 7px;
+}
+
+.familial
+{
+   display: inline;
+   border: solid 2px #DEEBFF;
+   border-radius: 10px 30px 30px 10px;
+   border-color: #b1b1b1;
+   margin-right: 30px;
+   padding: 7px 7px 7px 7px;
+}
+
+
+.romantique
+{
+   display: inline;
+   border: solid 2px #DEEBFF;
+   border-radius: 10px 30px 30px 10px;
+   border-color: #b1b1b1;
+   margin-right: 30px;
+   padding: 7px 7px 7px 7px;
+
+}
+
+.animaux
+{
+   display: inline;
+   border: solid 2px #DEEBFF;
+   border-radius: 10px 30px 30px 10px;
+   border-color: #b1b1b1;
+   margin-right: 30px;
+   padding: 7px 7px 7px 7px;
+
+}
+
+/* ------- LOGO FILTRES ---------- */
+
+.billet{
+    background-color: #DEEBFF;
+    color: #0065FC;   
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.personne{
+    background-color: #DEEBFF;
+    color: #0065FC;   
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.coeur{
+    background-color: #DEEBFF;
+    color: #0065FC;   
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.chien{
+    background-color: #DEEBFF;
+    color: #aeb0b3;   
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+/* ------- INFO ---------*/
+
+#info
+{
+   padding-top: 15px;
+   font-size: 0.9em;
+   opacity: 0.5;
+
 }
 
