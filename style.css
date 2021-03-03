@@ -1,35 +1,24 @@
 /*  --------- POLICES -------- */
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('font/raleway-regular-webfont.eot');
-    src: url('font/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/raleway-regular-webfont.woff2') format('woff2'),
-         url('font/raleway-regular-webfont.woff') format('woff'),
-         url('font/raleway-regular-webfont.ttf') format('truetype'),
-         url('font/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 /* -------- ÉLÉMENTS PRINCIPAUX --------- */
 body{
-    font-family: 'raleway thin' Arial, Helvetica, sans-serif;
+    font-family: 'Raleway';
 }
 h1 h2{
     font-weight: bold;
     width: 500px;
 }
-#bloc_page{
-    padding-left: 25px;
-    padding-right: 25px;
-}
+
 /* ------- NAVIGATION -------- */
 
 header{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 10px;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #menu{
@@ -42,10 +31,6 @@ header{
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-}
-
-#logo img{
-	height: auto;
 }
 
 nav ul{
@@ -75,6 +60,12 @@ nav a:hover{
 
 /*----- BLOC RECHERCHE --------*/
 
+#blocrecherche{
+        padding-left: 40px;
+        padding-right: 40px;
+}
+
+
 #recherche h1{
 	font-weight: bold;
 	font-size: 1.2em;
@@ -83,7 +74,7 @@ nav a:hover{
 }
 
 form{
-	display: flex;
+    display: flex;
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	width: 370px;
@@ -95,8 +86,8 @@ form{
 	border: 1px solid #F2F2F2;
 	border-radius: 10px 0 0 10px;
 	background-color: #F2F2F2;
-	padding: 12px 0 0 20px;
-	width: 43px;
+	padding: 12px 7px 0 12px;
+	width: 20px;
 	height: 27px;
 }
 
@@ -142,7 +133,7 @@ input{
 {
    display: inline;
    border: solid 2px #DEEBFF;
-   border-radius: 10px 30px 30px 10px;
+   border-radius: 30px 30px 30px 30px;
    border-color: #b1b1b1;
    margin-right: 30px;
    padding: 7px 7px 7px 7px;
@@ -152,7 +143,7 @@ input{
 {
    display: inline;
    border: solid 2px #DEEBFF;
-   border-radius: 10px 30px 30px 10px;
+   border-radius: 30px 30px 30px 30px;
    border-color: #b1b1b1;
    margin-right: 30px;
    padding: 7px 7px 7px 7px;
@@ -163,7 +154,7 @@ input{
 {
    display: inline;
    border: solid 2px #DEEBFF;
-   border-radius: 10px 30px 30px 10px;
+   border-radius: 30px 30px 30px 30px;
    border-color: #b1b1b1;
    margin-right: 30px;
    padding: 7px 7px 7px 7px;
@@ -174,7 +165,7 @@ input{
 {
    display: inline;
    border: solid 2px #DEEBFF;
-   border-radius: 10px 30px 30px 10px;
+   border-radius: 30px 30px 30px 30px;
    border-color: #b1b1b1;
    margin-right: 30px;
    padding: 7px 7px 7px 7px;
@@ -209,19 +200,45 @@ input{
 
 .chien{
     background-color: #DEEBFF;
-    color: #aeb0b3;   
+    color: #0065FC;   
     border-radius: 100%;
     width: 30px;
     height: 30px;
 }
 
-/* ------- INFO ---------*/
+/* ------- INFO --------- */
 
 #info
 {
    padding-top: 15px;
    font-size: 0.9em;
    opacity: 0.5;
-
+   padding-bottom: 12px;
 }
+
+/* ---------- SECTION HEBERGEMENTS --------- */
+
+#hebergements{
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    background-color: #F2F2F2;
+    border-radius: 2% ;
+    margin-left: 30px;
+}
+
+#titre_hebergement{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 40px;
+}
+
+.boite_hebergement{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
 
