@@ -126,13 +126,6 @@ input{
     margin: 0.6em 0.5em;
     border: 2px solid #e0e0e0;
     border-radius: 2em;
-  }
-
-.filtresBackground:hover {
-    background-color: #deebff;
-    -webkit-transition: background-color 400ms linear;
-    -ms-transition: background-color 400ms linear;
-    transition: background-color 400ms linear;
 }
 
 .filtresRond {
@@ -152,6 +145,16 @@ input{
     color: black;
     font-weight: bold;
 }
+
+/* ANIMATION SURVOL SOURIS FILTRES */
+
+.filtresBackground:hover {
+    background-color: #deebff;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
   
 /* ------- INFO --------- */
 
@@ -190,10 +193,10 @@ input{
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 }
 
-  #hebergement {
+#hebergement {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -256,8 +259,6 @@ input{
     font-size: 1em;
 }
 
-
-
 .hebergement a{
     text-decoration: none;
     color: black;
@@ -277,7 +278,7 @@ input{
     color: black;
 }
 
-/* ANIMATION SURVOL SOURIS */
+/* ANIMATION SURVOL SOURIS HEBERGEMENT */
 
 .container_item a:hover {
     -webkit-transform: scale(1.05); /* Safari et Chrome */
