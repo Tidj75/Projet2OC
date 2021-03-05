@@ -185,9 +185,8 @@ input{
     border-radius: 20px;
     padding: 44px 36px 44px 36px;
     max-width: 805px;
-    margin-left: 15px;
 }
-.container_item {
+#container_item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,18 +195,19 @@ input{
     margin-bottom: 15px;
 }
 
-#hebergement {
+.hebergement {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 56px;
+    margin: 15px 15px;
   }
 
 .titre_hebergements_a_marseille {
     margin: 0px;
     margin-bottom: 21px;
-
+    font-size: 1.3em;
 }
 
 .box_carte {
@@ -241,9 +241,9 @@ input{
 }
 
 .titre_contenu {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-top: -19px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        margin-top: -19px;
 }
 
 .prix_contenu {
@@ -251,12 +251,15 @@ input{
     margin-top: -35px;
 }
 
-.hebergement_notation {
+.hebergement_notation{
     padding-bottom: 11px;
+    color: #0065FC;
+    padding-top: 10px;
 }
 
 .titre_contenu h3{
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bold; /* ?????? */
 }
 
 .hebergement a{
@@ -265,9 +268,11 @@ input{
 }
 /* -------- ETOILES --------- */
 
-.hebergement_notation{
+.hebergement_notation_populaire{
     color: #0065FC;
+    margin-top: -19px;
 }
+
 
 .fas.fa-star.grey-star {
     color: grey;
@@ -278,9 +283,84 @@ input{
     color: black;
 }
 
+
+/* LES PLUS POPULAIRES */
+
+#container_hebergements_populaires {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 22px 38px 22px 38px;
+    max-width: 345px;
+}
+
+#hebergement_les_plus_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box_populaire_carte {
+    border: 3px solid white;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    padding: 6px 58px 6px 6px;
+    max-width: 284px;
+    max-height: 135px;
+    margin-bottom: 29px;
+}
+
+.photo_populaire {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.hebergement_populaire_contenu {
+    padding: 7px 0px 7px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -36px;
+}
+
+.titre_populaire_contenu {
+    padding-bottom: 14px;
+    margin-top: -19px;
+    padding-bottom: 11px;
+}
+
+.prix_populaire_contenu {
+    padding-bottom: 30px;
+    margin-top: -35px;
+}
+
+.titre_les_plus_populaires {
+    font-size: 1em;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+}
+
+.fas.fa-chart-line{
+    margin-left: 115px;
+}
+
+.hebergement_notation{
+    padding-bottom: 11px;
+    margin-top: -19px;
+}
+
+.titre_populaire_contenu h3{
+    font-size: 1.1em;
+}
+
+
 /* ANIMATION SURVOL SOURIS HEBERGEMENT */
 
-.container_item a:hover {
+#container_item a:hover {
     -webkit-transform: scale(1.05); /* Safari et Chrome */
     -moz-transform: scale(1.05); /* Firefox */
     -ms-transform: scale(1.05); /* Internet Explorer 9 */
@@ -292,4 +372,16 @@ input{
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
 }
-  
+
+#container_hebergements_populaires a:hover{
+    webkit-transform: scale(1.05); /* Safari et Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
+    -ms-transform: scale(1.05); /* Internet Explorer 9 */
+    -o-transform: scale(1.05); /* Opera */
+    transform: scale(1.05);
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
