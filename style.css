@@ -32,7 +32,7 @@ header{
 	align-items: baseline;
 }
 
-#logo{
+#logo_reservia{
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
@@ -357,6 +357,7 @@ input{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
 /* ---------- CONTAINER ACTIVITÉS ---------- */
@@ -405,7 +406,7 @@ input{
 .titre_activite{
     padding-bottom: 5px;
 }
-/* --------- DIMENSIONS IMAGES --------- */
+/* --------- DIMENSIONS IMAGES ACTIVITÉS --------- */
 
 .activite_box_1et4 img{
     width: 290px;
@@ -447,8 +448,39 @@ input{
         border-top-right-radius: 10px;
 }
 
-/* -------- ETOILES --------- */
+/* --------- FOOTER ---------- */
 
+footer{
+    background-color: #F2F2F2;
+    height: 240px;
+}
+
+.bloc_footer {
+    display: flex;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+  
+.interieur_bloc_footer {
+    width: 40%;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+  
+footer h4 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+  
+footer a {
+    color: black;
+    display: block;
+    margin: 15px 0;
+    font-weight: 500;
+}
+/* -------- ETOILES --------- */
 
 .hebergement_notation_populaire{
     color: #0065FC;
@@ -460,35 +492,13 @@ input{
     color: #DBDDDE;
 }
 
-/* ANIMATION SURVOL SOURIS HEBERGEMENT */
+/* ---------- ANIMATION SURVOL SOURIS ------------ */
 
+
+
+#container_hebergements_populaires a:hover,
+#activites_a_marseille a:hover,
 #container_item a:hover {
-    -webkit-transform: scale(1.05); /* Safari et Chrome */
-    -moz-transform: scale(1.05); /* Firefox */
-    -ms-transform: scale(1.05); /* Internet Explorer 9 */
-    -o-transform: scale(1.05); /* Opera */
-    transform: scale(1.05);
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
-}
-
-#container_hebergements_populaires a:hover{
-    webkit-transform: scale(1.05); /* Safari et Chrome */
-    -moz-transform: scale(1.05); /* Firefox */
-    -ms-transform: scale(1.05); /* Internet Explorer 9 */
-    -o-transform: scale(1.05); /* Opera */
-    transform: scale(1.05);
-    -webkit-transition: all 1s ease; /* Safari et Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* Internet Explorer 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
-}
-
-#activites_a_marseille a:hover{
     webkit-transform: scale(1.05); /* Safari et Chrome */
     -moz-transform: scale(1.05); /* Firefox */
     -ms-transform: scale(1.05); /* Internet Explorer 9 */
