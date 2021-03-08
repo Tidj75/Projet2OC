@@ -196,7 +196,7 @@ input{
     margin-bottom: 15px;
 }
 
-#hebergement {
+#hebergements {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -336,7 +336,7 @@ input{
     font-size: 1.1em;
 }
 
-/* ------ ACTIVITES ------- */
+/* ------------------------------ ACTIVITÉS ----------------------------- */
 
 #activites_a_marseille {
     background-color: white;
@@ -348,7 +348,6 @@ input{
     margin: 15px 15px;
     padding-top: 20px;
 }
-
 .lieu_activites{
     margin-left: 25px;
     font-size: 1.1em;
@@ -358,32 +357,94 @@ input{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.photo_activite1 img{
+/* ---------- CONTAINER ACTIVITÉS ---------- */
+
+.activite_box_1et4 {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    margin-right: 50px;
+    max-height: 510px;
+}
+
+#activite_box_2et3{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    max-height: 510px;
+}
+#activite_box_5et6{
+    display: flex;
+    flex-direction: column;
+    max-height: 510px;
+}
+
+
+/* id créer car les margin-bottom sont différentes (sur le modèle, les  solution? */
+#activite_2{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    margin-bottom: 67px;
+
+}
+
+#activite_5{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    margin-bottom: 46px;
+}
+
+#activite_3,
+#activite_6{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+
+}
+
+.titre_activite{
+    padding-bottom: 5px;
+}
+/* --------- DIMENSIONS IMAGES --------- */
+
+.activite_box_1et4 img{
     width: 290px;
     height: 450px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.activite2_3,
- {
-    display: flex;
-    flex-direction: column;
-}
 
-.activite1 {
-    box-shadow: 0 0 20px #0000002e;
-    border-radius: 20px;
-    margin: 0px 0px 20px 0px;
-}
-
-.photo_activite1, {
+#activite_2 img{
+    width: 330px;
+    height: 200px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+#activite_5 img{
+        width: 333px;
+        height: 155px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+}
+
+#activite_3 img{
+        width: 330px;
+        height: 125px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+}
+
+#activite_6 img{
+        width: 333px;
+        height: 190px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
 }
 
 /* -------- ETOILES --------- */
@@ -415,6 +476,19 @@ input{
 }
 
 #container_hebergements_populaires a:hover{
+    webkit-transform: scale(1.05); /* Safari et Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
+    -ms-transform: scale(1.05); /* Internet Explorer 9 */
+    -o-transform: scale(1.05); /* Opera */
+    transform: scale(1.05);
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+#activites_a_marseille a:hover{
     webkit-transform: scale(1.05); /* Safari et Chrome */
     -moz-transform: scale(1.05); /* Firefox */
     -ms-transform: scale(1.05); /* Internet Explorer 9 */
