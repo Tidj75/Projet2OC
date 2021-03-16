@@ -50,7 +50,7 @@ header ul {
   color: #0065fc;
 }
 
-header ul li a:hover {
+header ul li a:hover  {       /* CLASS ACTIVE NE FONCTIONNE PAS  */
   border-top: 2px solid #0065fc;
   padding-top: 21px;
   color: #0065fc;
@@ -93,18 +93,6 @@ a {
   align-items: center;
 }
 
-button {
-  background-color: #0065fc;
-  border: none;
-  padding: 15px 15px;
-  border-radius: 0px 10px 10px 0px;
-  font-weight: bold;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1em;
-  cursor: pointer;
-  margin: 0 -50px;
-}
-
 .iconemap {
   font-size: 25px;
   background-color: #f2f2f2;
@@ -134,13 +122,10 @@ input {
   padding: 15px;
   background-color: #0065fc;
   color: white;
-  position: relative;
-  right: 43px;
+  margin-left: -36px;
 }
 
-.loupelogo i {
-  display: none;
-}
+
 
 /* Mise en forme des filtres*/
 
@@ -182,7 +167,7 @@ input {
 .imagefiltre {
   padding: 15px 15px;
   border-radius: 50%;
-  background-color: #d9d9d9;
+  background-color: #DEEBFF;
   cursor: pointer;
 }
 
@@ -190,9 +175,6 @@ input {
   color: #0065fc;
 }
 
-.fa-map-marker-alt {
-  color: black;
-}
 
 /* la ligne information */
 
@@ -240,12 +222,11 @@ input {
 }
 
 .hotel {
-  width: 30%;
-  width: calc(33.3% - 10px);
+  width: calc(33.3% - 10px); /* MOYEN D'ADAPTER TOUTE LA LARGEUR AUTOMATIQUEMENT*/
   background: white;
   border-radius: 20px;
   padding: 5px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* MOYEN d'ALIGNER LA LIGNE DANS MON BLOC HERBGEMENTSMARSEILLE */
   margin: 0 5px 20px 5px;
   box-shadow: 0 5px 16px #0000002e;
   -webkit-transition: all 1s ease; /* Safari et Chrome */
@@ -266,8 +247,6 @@ input {
 .hotel img {
   background-color: white;
   border-radius: 15px 15px 0px 0px;
-  transition-duration: 0.1s;
-  cursor: pointer;
   width: 100%;
   height: 120px;
   object-fit: cover;
@@ -275,7 +254,6 @@ input {
 
 .hotel p {
   margin: 5px 10px;
-  font-weight: 100;
 }
 
 .hotel h3 {
@@ -286,12 +264,7 @@ input {
   margin: 3px 10px;
 }
 
-.main {
-  display: flex;
-}
-
 .afficherplus {
-  color: black;
   padding-left: 8px;
 }
 
@@ -305,13 +278,10 @@ input {
   display: flex;
 }
 
-.hebergementspop {
-  position: relative;
-}
+
 
 .hotelpop {
   display: flex;
-  width: 100%;
   background: white;
   border-radius: 20px;
   padding: 5px;
@@ -340,7 +310,6 @@ input {
 .popimage {
   background-color: white;
   transition-duration: 0.1s;
-  cursor: pointer;
   float: left;
   width: 45%;
   height: 92%;
@@ -349,8 +318,7 @@ input {
   object-fit: cover;
 }
 
-.fa-chart-line:before {
-  content: "\f201";
+.fa-chart-line {
   position: absolute;
   right: 43px;
   margin-top: -17px;
@@ -365,19 +333,10 @@ input {
   margin: 7px;
 }
 
-.hotelpop p {
-  margin: 0px;
-  font-weight: 100;
-}
-
 .etoilespop {
   margin: 30px;
 }
 /* PARAMETRES DE LA SECTION ACTIVITE */
-
-#Activite {
-  width: 80%;
-}
 
 .containerActivites {
   display: flex;
@@ -388,7 +347,6 @@ input {
   height: 496px;
   margin-top: 30px;
   margin-bottom: 100px;
-  box-sizing: border-box;
 }
 
 .blocActivite {
@@ -409,7 +367,6 @@ input {
   -ms-transform: scale(1.05); /* Internet Explorer 9 */
   -o-transform: scale(1.05); /* Opera */
   transform: scale(1.05);
-  cursor: pointer;
 }
 
 .titresection {
@@ -480,7 +437,6 @@ footer {
 }
 
 .footerTitre {
-  display: block;
   font-size: 1.3em;
   font-weight: bold;
 }
@@ -489,10 +445,21 @@ footer {
   color: black;
   display: block;
   margin: 15px 0;
-  font-weight: 500;
 }
 
-/*RESPONSIVE MOBILES*/
+
+
+
+
+
+
+
+
+
+
+
+
+          /*RESPONSIVE MOBILES*/
 
 @media (min-width: 300px) and (max-width: 767px) /* SMARTPHONES */ {
   /* PARAMETRES GENERAUX */
@@ -518,10 +485,6 @@ footer {
   .containerheader {
     display: grid;
     padding-top: 5px;
-  }
-
-  .headernav {
-    margin-right: 0;
   }
 
   /* HEADER MENU */
@@ -553,22 +516,6 @@ footer {
     border-bottom: 2px solid #0065fc;
     border-top: none;
     padding-bottom: 5px;
-  }
-
-  /* PARAMETRES DU DISPLAY BOUTON LOUPE */
-
-  .loupelogo i {
-    display: inline;
-    color: white;
-    background-color: #0065fc;
-    padding: 18px;
-    border-radius: 18px;
-    position: relative;
-    right: 52px;
-  }
-
-  .boutonderecherche {
-    display: none;
   }
 
   /* FILTRES */
@@ -645,7 +592,6 @@ footer {
     height: auto;
     margin-bottom: 25px;
     justify-content: normal;
-    -moz-margin-start: -60px;
   }
 
   .blocActivite {
@@ -679,83 +625,5 @@ footer {
 
   .interieurblockFooter {
     width: auto;
-  }
-}
-
-/* RESPONSIVE TABLETTE */
-
-@media (min-width: 768px) and (max-width: 1024px) /* TABLETTE */ {
-  /* TEXTE DU HEADER */
-  .subtext {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  /* FORMULAIRE DE RECHERCHE */
-
-  .logosearch {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5px;
-    margin-top: -15px;
-  }
-
-  /* FILTRES */
-  .filtres {
-    align-items: center;
-    width: 100%;
-  }
-
-  .titre {
-    font-size: 12px;
-  }
-
-  .barreFiltre {
-    width: 18%;
-  }
-
-  .info {
-    align-items: CENTER;
-    position: relative;
-  }
-
-  /* HEBERGEMENTS ET POPULAIRES */
-
-  .hebergementetpop {
-    margin: 25px 0 50px;
-    display: FLEX;
-    flex-direction: column;
-  }
-
-  .titresection {
-    text-align: center;
-    padding-bottom: 5px;
-  }
-
-  /* PARAMETRES HEBERGEMENTS */
-
-  #Hebergements {
-    width: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); /*centré dans l'élément parent*/
-    margin-bottom: 20px;
-    border-radius: 0;
-  }
-
-  /* PARAMETRES HEBERGEMENTS POPULAIRES */
-
-  #pluspopulaires {
-    width: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
-  }
-
-@media (min-width: 1025px) and (max-width: 1600px) /* GRAND ECRAN */ {
-  #pluspopulaires {
-    display: grid;
   }
 }
