@@ -8,7 +8,6 @@ h2,
 h3,
 a {
   font-family: "Raleway";
-  font-weight: bold;
 }
 
 p {
@@ -333,9 +332,6 @@ input {
   margin: 7px;
 }
 
-.etoilespop {
-  margin: 30px;
-}
 /* PARAMETRES DE LA SECTION ACTIVITE */
 
 .containerActivites {
@@ -583,6 +579,9 @@ footer {
     padding: 0;
     order: 1;
     display: grid;
+  }
+  .fa-chart-line {
+    margin: 0px;
   }
 
   /* PARAMETRES ACTIVITES */
