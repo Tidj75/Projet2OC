@@ -14,11 +14,17 @@ p {
   font-family: "Raleway";
 }
 
+body{
+  width: 100%;
+}
+
+
+
 /* PARAMETRES DE LA PAGE */
 
 #blocpage {
   margin: auto;
-  width: 98%;
+  width: 100%;
 }
 
 /* PARAMETRES DU HEADER */
@@ -49,7 +55,16 @@ header ul {
   color: #0065fc;
 }
 
-header ul li a:hover  {       /* CLASS ACTIVE NE FONCTIONNE PAS  */
+header ul li a:hover  {
+  border-top: 2px solid #0065fc;
+  padding-top: 21px;
+  color: #0065fc;
+}
+header{
+  margin: 0px 18px 0px 18px;
+}
+
+.active  {
   border-top: 2px solid #0065fc;
   padding-top: 21px;
   color: #0065fc;
@@ -202,7 +217,7 @@ input {
 
 .hebergementetpop {
   display: flex;
-  margin: 25px 0 50px;
+  margin: 25px 18px 50px 18px;
 }
 
 /* PARAMETRES HEBERGEMENTS */
@@ -274,7 +289,7 @@ input {
   border-radius: 15px;
   width: 32%;
   padding: 20px;
-  display: flex;
+  display: inline-block;
 }
 
 
@@ -341,8 +356,7 @@ input {
   align-content: space-between;
   justify-content: space-between;
   height: 496px;
-  margin-top: 30px;
-  margin-bottom: 100px;
+  margin: 30px 0px 100px 0px  ;
 }
 
 .blocActivite {
@@ -419,7 +433,7 @@ input {
 
 footer {
   background-color: #f2f2f2;
-}
+  width: 100%;}
 
 .blockFooter {
   display: flex;
