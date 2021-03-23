@@ -549,7 +549,7 @@ footer a:hover{
   .logosearch a{
     display: none;
   }
-  
+
   .fa-search{
     border-radius: 18px 18px 18px 18px;
     padding: 18px;
@@ -648,9 +648,8 @@ footer a:hover{
   }
 
   .Activite {
-    margin-bottom: 30%;
+    margin-bottom: 40%;
     height: 70px;
-    -moz-margin-start: 62px;
   }
 
   .nomactivite {
