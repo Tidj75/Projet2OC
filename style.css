@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
+
+@-moz-document url-prefix() 
+{ H1, H2, H3, H4, H5, H6 {font-weight:700;} /* je ne vois pas la différence */
+
+} 
+
 h1,
 h2,
 h3,
@@ -543,12 +549,13 @@ footer a:hover{
   .logosearch a{
     display: none;
   }
+  
   .fa-search{
     border-radius: 18px 18px 18px 18px;
     padding: 18px;
     background-color: #0065fc;
     color: white;
-    margin-left: -48px;
+    margin-left: -45px;
     cursor: pointer; 
   }
 
@@ -641,10 +648,9 @@ footer a:hover{
   }
 
   .Activite {
-    margin-bottom: 40%;
+    margin-bottom: 30%;
     height: 70px;
     -moz-margin-start: 62px;
-    width: 95%;
   }
 
   .nomactivite {
