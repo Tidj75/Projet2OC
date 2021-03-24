@@ -4,11 +4,6 @@
 
 
 
-@-moz-document url-prefix() 
-{ H1, H2, H3, H4, H5, H6 {font-weight:700;} /* je ne vois pas la différence */
-
-} 
-
 h1,
 h2,
 h3,
@@ -145,6 +140,9 @@ input {
   color: white;
   margin-left: -52px;  /* SUR FIREFOX MARGIN-LEFT: -70px*/ 
 }
+
+@-moz-document url-prefix()
+{.boutonderecherche {margin-left: -67px;}} 
 
 
 
@@ -559,6 +557,14 @@ footer a:hover{
     cursor: pointer; 
   }
 
+  .active  {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    padding-bottom: 7px;
+    color: #0065fc;
+  }
+  
+
   /* FILTRES */
 
   .filtres {
@@ -754,3 +760,5 @@ footer a:hover{
     order: 1;
 
   }
+
+
