@@ -557,6 +557,9 @@ footer a:hover{
     cursor: pointer; 
   }
 
+  @-moz-document url-prefix()
+{.fa-search {margin-left: -60px;}} 
+
   .active  {
     border-top: none;
     border-bottom: 2px solid #0065fc;
