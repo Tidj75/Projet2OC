@@ -4,6 +4,7 @@
 
 
 
+
 h1,
 h2,
 h3,
@@ -142,7 +143,7 @@ input {
   color: white;
   margin-left: -61px;
 }
-@mac-os .boutonderecherche {margin-left: -51px;}
+.mac-os .boutonderecherche {margin-left: -51px;}
 
 @-moz-document url-prefix()
 {.boutonderecherche {margin-left: -67px;}} 
@@ -174,7 +175,6 @@ input {
 .barreFiltre {
   display: flex;
   align-items: center;
-  width: auto;
   margin-right: 2em;
   border: 2px solid #d9d9d9;
   border-radius: 2em;
@@ -190,7 +190,6 @@ input {
   padding: 15px 15px;
   border-radius: 50%;
   background-color: #DEEBFF;
-  cursor: pointer;
 }
 
 .fas {
@@ -206,7 +205,6 @@ input {
 
 .fa-info {
   text-align: center;
-  color: #0065fc;
   border-radius: 100%;
   height: 33px;
   width: 33px;
@@ -235,7 +233,7 @@ input {
   border-radius: 15px;
   width: 62%;
   padding: 20px;
-  margin: 0 25px 0 0;
+  margin-right: 25px;
 }
 
 .hebergementmarseille {
@@ -267,7 +265,6 @@ input {
 }
 
 .hotel img {
-  background-color: white;
   border-radius: 15px 15px 0px 0px;
   width: 100%;
   height: 120px;
@@ -303,13 +300,11 @@ input {
   border-radius: 15px;
   width: 32%;
   padding: 20px;
-  display: inline-block;
 }
 
 
 
 .hotelpop {
-  display: flex;
   background: white;
   border-radius: 20px;
   padding: 5px;
@@ -336,7 +331,6 @@ input {
 }
 
 .popimage {
-  background-color: white;
   transition-duration: 0.1s;
   float: left;
   width: 45%;
@@ -365,11 +359,8 @@ input {
 
 .containerActivites {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-between;
   justify-content: space-between;
-  height: 496px;
   margin: 30px 0px 100px 0px  ;
 }
 
@@ -378,7 +369,6 @@ input {
 }
 
 .Activite {
-  background-color: white;
   border-radius: 1.25em;
   box-shadow: 0 0 16px #0000002e;
 }
@@ -448,6 +438,7 @@ input {
 footer {
   background-color: #f2f2f2;
   width: 100%;
+  margin-left: -7px;
 }
 
 footer a:hover{
@@ -458,7 +449,6 @@ footer a:hover{
   display: flex;
   max-width: 100%;
   padding: 0 10px;
-  box-sizing: border-box;
 }
 
 .interieurblockFooter {
@@ -586,11 +576,6 @@ footer a:hover{
     margin-bottom: 10px;
   }
 
-  .fam {
-    position: absolute;
-    margin: 34px 0 0 55%;
-    width: 35%;
-  }
 
   /* HEBERGEMENTS ET POPULAIRES */
 
@@ -603,10 +588,9 @@ footer a:hover{
 
   #Hebergements {
     width: 100%;
-    background-color: white;
     order: 2;
     width: 100%;
-    margin: 0%;
+    margin-top: 5%;
     padding: 0;
   }
 
@@ -632,11 +616,10 @@ footer a:hover{
 
   #pluspopulaires {
     width: 100%;
-    margin: 0;
     padding: 0;
     order: 1;
-    display: grid;
   }
+  
   .fa-chart-line {
     margin: 0px;
   }
@@ -644,10 +627,7 @@ footer a:hover{
   /* PARAMETRES ACTIVITES */
 
   .containerActivites {
-    display: grid;
-    height: auto;
     margin-bottom: 25px;
-    justify-content: normal;
   }
 
   .blocActivite {
@@ -667,7 +647,6 @@ footer a:hover{
   .nomactivite {
     padding: 8px 0px 5px 20px;
     border-radius: 0 0 1.25em 1.25em;
-    border-color: transparent;
     box-shadow: 0 5px 16px #0000002e;
     margin-top: -12px;
   }
@@ -711,11 +690,7 @@ footer a:hover{
   }
 
   /* FILTRES */
-  .filtres {
-    align-items: center;
-    width: 100%;
-  }
-
+  
   .titre {
     font-size: 12px;
   }
@@ -724,16 +699,10 @@ footer a:hover{
     width: 18%;
   }
 
-  .info {
-    align-items: CENTER;
-    position: relative;
-  }
-
   /* HEBERGEMENTS ET POPULAIRES */
 
   .hebergementetpop {
     margin: 25px 0 50px;
-    display: FLEX;
     flex-direction: column;
   }
 
@@ -750,7 +719,6 @@ footer a:hover{
     left: 50%;
     transform: translateX(-50%); /*centré dans l'élément parent*/
     margin-bottom: 20px;
-    border-radius: 0;
     order: 2;
 
   }
@@ -762,9 +730,6 @@ footer a:hover{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    display: grid;
     order: 1;
 
   }
-
-
