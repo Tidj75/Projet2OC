@@ -142,12 +142,11 @@ input {
   padding: 15px;
   background-color: #0065fc;
   color: white;
-  margin-left: -61px;
+  margin-left: -66px;
 }
-.mac-os .boutonderecherche {margin-left: -56px;}
 
 @-moz-document url-prefix()
-{.boutonderecherche {margin-left: -67px;}} 
+{.boutonderecherche {margin-left: -74px;}}
 
 
 
