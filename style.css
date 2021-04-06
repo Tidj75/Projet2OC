@@ -45,9 +45,7 @@ body{
   display: flex;
   margin-right: 3%;
 }
-.Logohaut {
-  cursor: pointer;
-}
+
 
 header ul {
   display: flex;
@@ -527,7 +525,7 @@ footer a:hover{
 
   header ul li {
     margin-left: 0;
-    padding: 10px 46px 5px 11px;
+    padding: 10px 85px 5px 28px;
   }
 
   header ul li a:hover {
@@ -554,11 +552,9 @@ footer a:hover{
 
   .active  {
     border-top: none;
-    border-bottom: 2px solid #0065fc;
     padding-bottom: 7px;
     color: #0065fc;
   }
-  
 
   /* FILTRES */
 
